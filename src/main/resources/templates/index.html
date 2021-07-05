@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="kr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link th:href='@{/css/libs/mapbox-gl.css}' rel='stylesheet' />
+    <link th:href='@{/css/libs/seekbar.css}' rel='stylesheet' />
+    <script type="text/javascript" th:src="@{/js/libs/mapbox-gl.js}"></script>
+    <script type="text/javascript" th:src="@{/js/libs/turf.js}"></script>
+    <script type="text/javascript" th:src="@{/js/libs/jquery-3.6.0.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/libs/three.js}"></script>
+    <script type="text/javascript" th:src="@{/js/libs/GLTFLoader.js}"></script>
+    <script type="text/javascript" th:src="@{/js/libs/seekbar.js}"></script>
+    <script type="text/javascript" th:src="@{/js/index.js}"></script>
+</head>
+<body>
+<div>
+    <div id="map" style="width:100%;height:550px;" />
+</div>
+<button onclick="carScene.play()">START</button>
+<button onclick="carScene.stop()">STOP</button>
+<div id="seekbar-container-vertical-red"
+     style="width:300px;height:50px"></div>
+</body>
+</html>
